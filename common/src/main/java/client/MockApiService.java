@@ -3,12 +3,14 @@ package client;
 import client.models.ResponseDto;
 import com.google.gson.reflect.TypeToken;
 import io.vavr.control.Try;
+import lombok.extern.log4j.Log4j2;
 
 import java.lang.reflect.Type;
 import java.util.Collections;
 import java.util.List;
 
 
+@Log4j2
 public class MockApiService {
 
     private final HttpClientWrapper httpClientWrapper;
