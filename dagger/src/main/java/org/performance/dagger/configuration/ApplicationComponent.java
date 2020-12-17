@@ -9,5 +9,5 @@ import javax.inject.Singleton;
 @Component(modules = {ApplicationModules.class})
 public interface ApplicationComponent {
 
-    void inject();
+    void inject(Service service);
 }
