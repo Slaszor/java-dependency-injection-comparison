@@ -8,7 +8,7 @@ import dagger.Provides;
 import javax.inject.Singleton;
 
 @Module
-public class ApplicationModules {
+public class ApplicationModule {
 
     @Provides
     @Singleton
@@ -27,4 +27,5 @@ public class ApplicationModules {
     public MockApiService provideMockApiService(HttpClientWrapper httpClientWrapper, String serverUrl){
         return new MockApiService(httpClientWrapper, serverUrl);
     }
+
 }

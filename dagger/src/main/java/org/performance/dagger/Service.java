@@ -1,14 +1,16 @@
 package org.performance.dagger;
 
-import client.HttpClientWrapper;
 import client.MockApiService;
+
+import javax.inject.Inject;
 
 public class Service {
 
+    @Inject
+    MockApiService mockApiService;
+
     public void ask(){
-        MockApiService api = new MockApiService(new HttpClientWrapper(),
-                "https://run.mocky.io/v3/bace37ce-aec7-45a3-b243-0a706383bd97");
-        api.getObjects()
+        mockApiService.getObjects()
                 .forEach(System.out::println);
     }
 }
