@@ -6,7 +6,8 @@ import client.MockApiService;
 public class Main {
 
     public static void main(String[] args) {
-        Servfice servfice = new Servfice();
-        servfice.ask();
+        Service service = new Service();
+        service.ask();
+
     }
 }
